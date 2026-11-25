@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b2b">
+  <meta name="description" content="Kingdom Grounds Lawn & Landscape — Serving the King. Caring for His Creation. Lawn care, shrub care, cleanups and excavation.">
+  <title>Kingdom Grounds Lawn &amp; Landscape</title>
+  <style>
+    :root{--green:#123b2b;--green2:#1c563d;--gold:#d7b45a;--cream:#f7f5ed;--ink:#17231c;--muted:#68746c}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit}
+    .topbar{background:#0b241a;color:#f8f5e9;text-align:center;padding:8px 14px;font-size:.88rem;letter-spacing:.03em}
+    header{background:var(--green);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 16px #0002}
+    .nav{max-width:1120px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .crest{width:48px;height:54px;flex:none;display:grid;place-items:center;color:var(--gold);font-size:25px;font-weight:bold;border:2px solid var(--gold);clip-path:polygon(50% 0,94% 13%,90% 72%,50% 100%,10% 72%,6% 13%)}
+    .brand strong{display:block;font-family:Georgia,serif;font-size:1.08rem;line-height:1.1;letter-spacing:.02em}
+    .brand small{display:block;color:#e4d39e;font-size:.68rem;letter-spacing:.13em;margin-top:5px}
+    nav{display:flex;align-items:center;gap:22px}
+    nav a{text-decoration:none;color:#f7f5ed;font-size:.92rem}
+    nav a:hover{color:var(--gold)}
+    .nav-cta,.btn{display:inline-block;background:var(--gold);color:#17231c;text-decoration:none;font-weight:bold;padding:12px 18px;border-radius:5px}
+    .hero{background:linear-gradient(110deg,rgba(8,35,24,.96),rgba(18,59,43,.82)),linear-gradient(0deg,#123b2b,#123b2b);color:white;min-height:510px;display:flex;align-items:center;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #d7b45a55;border-radius:50%;right:-120px;top:45px;box-shadow:0 0 0 35px #d7b45a0d,0 0 0 75px #d7b45a0a}
+    .hero-inner{max-width:1120px;width:100%;margin:auto;padding:78px 22px;position:relative;z-index:1}
+    .eyebrow{color:var(--gold);font-weight:bold;letter-spacing:.17em;text-transform:uppercase;font-size:.78rem}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.12}
+    h1{font-size:clamp(2.7rem,6vw,4.7rem);max-width:720px;margin:15px 0 18px}
+    h1 span{color:var(--gold)}
+    .hero p{max-width:570px;color:#e8eee9;font-size:1.12rem}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn-outline{display:inline-block;border:1px solid #e8e3d3;color:white;text-decoration:none;padding:11px 18px;border-radius:5px;font-weight:bold}
+    .trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:35px;color:#f1e7c7;font-size:.9rem}
+    .trust span:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:8px}
+    section{padding:74px 22px}
+    .wrap{max-width:1120px;margin:auto}
+    .section-head{text-align:center;max-width:680px;margin:0 auto 38px}
+    .section-head h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0 12px;color:var(--green)}
+    .section-head p{color:var(--muted);margin:0}
+    .services{background:var(--cream)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:white;padding:25px;border-radius:8px;border:1px solid #e7e5dc;box-shadow:0 8px 22px #102c1c08}
+    .service .symbol{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#e9efea;color:var(--green);font-size:1.25rem;margin-bottom:16px}
+    .service h3{font-size:1.3rem;color:var(--green);margin:0 0 8px}
+    .service p{margin:0;color:var(--muted);font-size:.95rem}
+    .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+    .about-panel{background:var(--green);color:white;border-radius:10px;padding:36px;position:relative;overflow:hidden}
+    .about-panel:after{content:"✝";position:absolute;right:20px;bottom:-45px;color:#ffffff0c;font-size:210px}
+    .about-panel h2{font-size:2.2rem;margin:0 0 15px;position:relative;z-index:1}
+    .about-panel p{color:#e5eee7;position:relative;z-index:1}
+    .scripture{color:var(--gold);font-family:Georgia,serif;font-style:italic;font-size:1.15rem;margin-top:22px;position:relative;z-index:1}
+    .about-copy h2{color:var(--green);font-size:2.5rem;margin:8px 0 16px}
+    .about-copy p{color:var(--muted)}
+    .checklist{list-style:none;padding:0;margin:20px 0}
+    .checklist li{margin:10px 0}
+    .checklist li:before{content:"✓";color:var(--green2);font-weight:bold;margin-right:10px}
+    .estimate{background:#eef2ed}
+    .formbox{max-width:760px;margin:auto;background:white;border-radius:10px;padding:30px;box-shadow:0 12px 35px #102c1c0d}
+    .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    label{display:block;font-weight:bold;font-size:.9rem;margin-bottom:6px}
+    input,select,textarea{width:100%;padding:13px;border:1px solid #ccd5cd;border-radius:5px;font:inherit;background:#fff;color:var(--ink)}
+    textarea{min-height:115px;resize:vertical}
+    .field.full{grid-column:1/-1}
+    .submit{border:0;cursor:pointer;font:inherit;font-weight:bold;background:var(--green);color:white;padding:14px 20px;border-radius:5px;width:100%;margin-top:17px}
+    .formnote{font-size:.82rem;color:var(--muted);margin:12px 0 0}
+    .contact{background:var(--green);color:white;text-align:center}
+    .contact h2{font-size:2.7rem;margin:8px 0 12px}
+    .contact p{color:#e5eee7}
+    .contact-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:25px}
+    .contact .btn-outline{border-color:#d7b45a;color:#f8f5e9}
+    footer{background:#0b241a;color:#dce5dd;padding:24px 22px;text-align:center;font-size:.88rem}
+    footer strong{color:var(--gold)}
+    .mobile-menu{display:none}
+    @media(max-width:760px){
+      .nav{padding:11px 16px}nav{gap:12px}nav a:not(.nav-cta){display:none}.nav-cta{padding:10px 12px;font-size:.85rem}
+      .hero{min-height:480px}.hero-inner{padding:65px 20px}
+      .cards{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr;gap:25px}
+    }
+    @media(max-width:520px){.cards{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formbox{padding:22px 17px}section{padding:58px 18px}.brand strong{font-size:.94rem}.brand small{font-size:.58rem}}
+  </style>
+</head>
+<body>
+  <div class="topbar">LICENSED &amp; INSURED &nbsp; | &nbsp; QUALITY CARE. HONEST SERVICE.</div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home" aria-label="Kingdom Grounds home">
+        <div class="crest">✝</div>
+        <div><strong>KINGDOM GROUNDS</strong><small>LAWN &amp; LANDSCAPE</small></div>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">Our Values</a>
+        <a href="#estimate">Free Estimate</a>
+        <a class="nav-cta" href="tel:9127227882">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="eyebrow">Kingdom Grounds Lawn &amp; Landscape</div>
+        <h1>Serving the <span>King.</span><br>Caring for His Creation.</h1>
+        <p>Dependable outdoor care with hard work, integrity, and attention to detail. Let us help keep your property clean, cared for, and looking its best.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#estimate">Request a Free Estimate</a>
+          <a class="btn-outline" href="tel:9127227882">Call 912-722-7882</a>
+        </div>
+        <div class="trust"><span>Licensed &amp; Insured</span><span>Free Estimates</span><span>Service with Integrity</span></div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">What We Do</div>
+          <h2>Grounds Care You Can Count On</h2>
+          <p>From routine lawn maintenance to property cleanups and excavation, we're ready to help with your outdoor projects.</p>
+        </div>
+        <div class="cards">
+          <article class="service"><div class="symbol">✂</div><h3>Mowing</h3><p>Keep your lawn neat, healthy-looking, and maintained with dependable mowing.</p></article>
+          <article class="service"><div class="symbol">⌁</div><h3>Edging</h3><p>Clean, defined edges that give your lawn and walkways a crisp finished look.</p></article>
+          <article class="service"><div class="symbol">✦</div><h3>Trimming</h3><p>Careful trimming around fences, obstacles, and hard-to-reach areas.</p></article>
+          <article class="service"><div class="symbol">❀</div><h3>Shrub Care</h3><p>Keep shrubs and ornamental plants tidy with attentive care and trimming.</p></article>
+          <article class="service"><div class="symbol">⌂</div><h3>Cleanups &amp; More</h3><p>Help restore order to outdoor spaces with seasonal and general property cleanups.</p></article>
+          <article class="service"><div class="symbol">▰</div><h3>Excavation</h3><p>Ask us about excavation needs and the right approach for your property project.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="about-panel">
+          <div class="eyebrow">Our Foundation</div>
+          <h2>Work with purpose. Serve with integrity.</h2>
+          <p>We believe every job deserves care, respect, and our best effort. Our goal is to serve our customers well while honoring the One who made the land we care for.</p>
+          <div class="scripture">“And whatsoever ye do, do it heartily, as to the Lord, and not unto men.”<br>— Colossians 3:23 (KJV)</div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">Why Kingdom Grounds</div>
+          <h2>Care for your property. Confidence in the work.</h2>
+          <p>We bring a service-first attitude to every property. Whether you need regular lawn maintenance or help with a larger outdoor project, reach out and tell us what you have in mind.</p>
+          <ul class="checklist">
+            <li>Respectful, dependable service</li>
+            <li>Attention to the details</li>
+            <li>Free estimate requests</li>
+            <li>Licensed &amp; insured</li>
+          </ul>
+          <a class="btn" href="#estimate">Get Your Free Estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="estimate" id="estimate">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Let's Get Started</div>
+          <h2>Request a Free Estimate</h2>
+          <p>Tell us a little about your project. Your phone's messaging app will open with your request ready to send.</p>
+        </div>
+        <div class="formbox">
+          <form id="estimateForm">
+            <div class="formgrid">
+              <div class="field"><label for="name">Your Name *</label><input id="name" name="name" required autocomplete="name" placeholder="Full name"></div>
+              <div class="field"><label for="phone">Your Phone Number *</label><input id="phone" name="phone" required type="tel" autocomplete="tel" placeholder="(555) 555-5555"></div>
+              <div class="field"><label for="service">Service Needed *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Mowing</option><option>Edging</option><option>Trimming</option><option>Shrub Care</option><option>Cleanups &amp; More</option><option>Excavation</option><option>Multiple Services</option><option>Other</option></select></div>
+              <div class="field"><label for="location">Property Address / Area</label><input id="location" name="location" autocomplete="street-address" placeholder="Street, town, or area"></div>
+              <div class="field full"><label for="details">Tell Us About the Job</label><textarea id="details" name="details" placeholder="Describe the work you need done..."></textarea></div>
+            </div>
+            <button class="submit" type="submit">Send Free Estimate Request</button>
+            <p class="formnote">Submitting opens a text message addressed to 912-722-7882. Review it and tap Send in your messaging app. No request is sent automatically by this website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="eyebrow">Contact Kingdom Grounds</div>
+        <h2>Ready to care for your grounds?</h2>
+        <p>Call or text us today to discuss your property and request a free estimate.</p>
+        <div class="contact-actions">
+          <a class="btn" href="tel:9127227882">Call 912-722-7882</a>
+          <a class="btn-outline" href="tel:9125848198">Call 912-584-8198</a>
+          <a class="btn-outline" href="sms:9127227882">Text Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>KINGDOM GROUNDS LAWN &amp; LANDSCAPE</strong><br>
+    Serving the King. Caring for His Creation.<br>
+    <span>© <span id="year"></span> Kingdom Grounds. All rights reserved.</span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('estimateForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const value = id => document.getElementById(id).value.trim();
+      const message = [
+        'KINGDOM GROUNDS - FREE ESTIMATE REQUEST',
+        '',
+        'Name: ' + value('name'),
+        'Phone: ' + value('phone'),
+        'Service: ' + value('service'),
+        'Property: ' + (value('location') || 'Not provided'),
+        'Details: ' + (value('details') || 'Not provided')
+      ].join('\n');
+      window.location.href = 'sms:9127227882?body=' + encodeURIComponent(message);
+    });
+  </script>
+</body>
+</html>
